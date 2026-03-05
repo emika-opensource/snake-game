@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Snake</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+  <div id="hud">
+    <div class="hud-item">
+      <span class="hud-label">Score</span>
+      <span class="hud-value" id="score-value">0</span>
+    </div>
+    <div class="hud-item">
+      <span class="hud-label">Best</span>
+      <span class="hud-value" id="highscore-value">0</span>
+    </div>
+  </div>
+  <div id="canvas-container">
+    <canvas id="game"></canvas>
+    <div class="overlay" id="start-overlay">
+      <div class="overlay-title"><span class="green">Snake</span></div>
+      <div class="overlay-subtitle">Classic arcade game</div>
+      <div class="start-hint">Press any key or tap to start</div>
+    </div>
+    <div class="overlay hidden" id="gameover-overlay">
+      <div class="final-score-label">Score</div>
+      <div class="final-score" id="final-score">0</div>
+      <div class="final-highscore" id="final-highscore">Best: 0</div>
+      <div class="new-highscore hidden" id="new-highscore">★ New High Score! ★</div>
+      <button class="btn" id="restart-btn">Play Again</button>
+    </div>
+    <div class="overlay hidden" id="pause-overlay">
+      <div class="pause-text">Paused</div>
+      <div class="pause-hint">Press Space to resume</div>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
