@@ -30,7 +30,7 @@ Eat the red food to grow and score points. Don't hit the walls or yourself!
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/snake-game.git
+git clone https://github.com/emika-opensource/snake-game.git
 cd snake-game
 
 # Open in your browser
